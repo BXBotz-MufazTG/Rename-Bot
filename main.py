@@ -28,9 +28,11 @@ AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split( ))
 PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT"))
 ADL_BOT_RQ = {}
 START_TEXT = """
-Hello {} , I'am a simple file or media rename bot with permanent thumbnail support.
+Hello {} , 
 
-Made by @FayasNoushad
+`I'am a simple file or media rename bot with permanent thumbnail support`.
+
+👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz)
 """
 HELP_TEXT = """
 <b><u>Rename</u></b>
@@ -46,14 +48,14 @@ HELP_TEXT = """
 <b><u>Show Thumbnail</u></b>
 ➠ Send /showthumb for view current thumbnail.
 
-Made by @FayasNoushad
+👲 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz)
 """
 ABOUT_TEXT = """
 - **Bot :** `Rename Bot`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
+- **Creator :** [ᴍʜᴅ ᴍᴜꜰᴀᴢ](https://telegram.me/mufaz123)
+- **Channel :** [ʙx ʙᴏᴛᴢ](https://telegram.me/BX_Botz)
 - **Credits :** `Everyone in this journey`
-- **Source :** [Click here](https://github.com/FayasNoushad/Rename-Bot)
+- **Source :** [Click here](https://t.me/nokiyirunnoippokitum)
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
