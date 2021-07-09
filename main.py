@@ -62,26 +62,25 @@ ABOUT_TEXT = """
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('🤖 Bot Updates', url='https://telegram.me/BX_Botz'),
+        InlineKeyboardButton('👥Support Group', url='https://telegram.me/BxSupport')
         ],[
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('About', callback_data='about'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('⚙️Help', callback_data='help'),
+        InlineKeyboardButton('🔰About', callback_data='about')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('About', callback_data='about'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('🏠Home', callback_data='home'),
+        InlineKeyboardButton('🔰About', callback_data='about'),
+        InlineKeyboardButton('🔒Close', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('🏠Home', callback_data='home'),
+        InlineKeyboardButton('⚙️Help', callback_data='help'),
+        InlineKeyboardButton('🔒Close', callback_data='close')
         ]]
     )
 
@@ -275,7 +274,7 @@ async def rename(bot, message):
             return
         description = "<b>" + file_name + "</b>"
         download_location = DOWNLOAD_LOCATION + "/"
-        thumb_image_path = download_location + "FayasNoushad " + str(message.from_user.id) + ".jpg"
+        thumb_image_path = download_location + "Bx_Botz " + str(message.from_user.id) + ".jpg"
         if not os.path.exists(thumb_image_path):
             mes = await thumb(message.from_user.id)
             if mes != None:
@@ -321,7 +320,7 @@ async def rename(bot, message):
                     video=new_file_name,
                     thumb=thumb_image_path,
                     caption=description,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')]]),
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://telegram.me/BX_Botz')]]),
                     reply_to_message_id=message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=("<code>Downloaded Successfully! Now I am Uploading to Telegram...</code>", a, c_time)
@@ -342,7 +341,7 @@ async def rename(bot, message):
                     document=new_file_name,
                     thumb=thumb_image_path,
                     caption=description,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')]]),
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://telegram.me/BX_Botz')]]),
                     reply_to_message_id=message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=("<code>Downloaded Successfully! Now I am Uploading to Telegram...</code>", a, c_time)
