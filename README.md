@@ -6,7 +6,7 @@ A simple telegram file or media rename bot with permanent thumbnail support
 
 # Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BXBots/Rename-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BXBotz-MufazTG/Rename-Bot)
 
 
 
